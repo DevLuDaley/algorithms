@@ -1,5 +1,5 @@
 
-function PrimeChecker (num) {
+function PrimeChecker(num) {
     // ? how do we confirm if a number is prime or not?
     // ! unless the num == 2, the num is not divisible (to a whole number) by 2 (aka it is not an even num)
     // ! check if num is divisible by 3, 5, 7, 11
