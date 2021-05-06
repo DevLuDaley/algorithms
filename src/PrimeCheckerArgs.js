@@ -9,6 +9,11 @@ function PrimeChecker(num) {
     // let primeBox = []
     // let notPrimeBox = []
     // let count = 100
+
+    // ! initialization
+    // ! condition
+    // ! Increment
+    
     var divisor = 2;
     // var i = 0
 
@@ -18,7 +23,7 @@ if(num == 2){
     // num.forEach(e =>
         while (num > divisor)
         {
-        if(num % 2 == 0)
+        if(num % divisor == 0)
         //  && i !== 2 || i == 1)
         {
             return false
@@ -42,15 +47,15 @@ if(num == 2){
         
     }
     }
-    console.log("PrimeChecker(num) 1 => ", PrimeChecker(1))
-    console.log("PrimeChecker(num) 2 => ", PrimeChecker(2))
-    console.log("PrimeChecker(num) 4 => ", PrimeChecker(4))
-    console.log("PrimeChecker(num) 23 => ", PrimeChecker(23))
-    console.log("PrimeChecker(num) 25 => ", PrimeChecker(25))
-    console.log("PrimeChecker(num) 30 => ", PrimeChecker(30))
-    console.log("PrimeChecker(num) 419 => ", PrimeChecker(419))
-    console.log("PrimeChecker(num) 137 => ", PrimeChecker(137))
-    console.log("PrimeChecker(num) 330 => ", PrimeChecker(330))
+    // console.log("PrimeChecker(num) 1 => ", PrimeChecker(1))
+    // console.log("PrimeChecker(num) 2 => ", PrimeChecker(2))
+    // console.log("PrimeChecker(num) 4 => ", PrimeChecker(4))
+    // console.log("PrimeChecker(num) 23 => ", PrimeChecker(23))
+    // console.log("PrimeChecker(num) 25 => ", PrimeChecker(25))
+    // console.log("PrimeChecker(num) 30 => ", PrimeChecker(30))
+    // console.log("PrimeChecker(num) 419 => ", PrimeChecker(419))
+    // console.log("PrimeChecker(num) 137 => ", PrimeChecker(137))
+    // console.log("PrimeChecker(num) 330 => ", PrimeChecker(330))
 
 // PrimeChecker([2,3,4,5])
-// export default PrimeChecker
+export default PrimeChecker
