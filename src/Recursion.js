@@ -1,11 +1,24 @@
-const plunker = (num) => {
-    if (num > 5){
-        console.log(num + " is a plunker!");
-    } else {
-        console.log(num + " is not a plunker. Sorry buddy.");
+
+function countDown(fromNumber) {
+    console.log(fromNumber);
+
+    let nextNumber = fromNumber - 1;
+
+    if (nextNumber > 0) {
+        countDown(nextNumber);
     }
 }
-plunker(10)
+countDown(5);
+
+
+// const plunker = (num) => {
+//     if (num > 5){
+//         console.log(num + " is a plunker!");
+//     } else {
+//         console.log(num + " is not a plunker. Sorry buddy.");
+//     }
+// }
+// plunker(10)
 
 // const stringy = (word) => {}
 
