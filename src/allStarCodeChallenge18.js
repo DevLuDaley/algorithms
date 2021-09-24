@@ -1,0 +1,68 @@
+function strCount(str, letter){
+    if (str.length == 0 ){
+        return 0
+    }
+
+    str = str.toLowerCase()
+    letter = letter.toLowerCase()
+    
+    if (str.length == 1 && str[0] != letter ){
+        console.log(0)
+        return 0
+    }
+    
+
+    if(str.includes(letter)){
+    var counter = 1
+
+    let box = str.replace(letter, "")
+
+    for(let solo of box){
+            if (solo == letter)
+            counter ++
+    }
+        console.log(counter);
+        return counter;
+    }
+
+    else
+    console.log(0) 
+    return 0
+}
+
+// strCount('Helo', 'l'); //1
+// strCount('Hello', 'l'); //2
+// strCount('Hellothere', 'e'); //3
+// strCount('Helllogggggggggg', 'g'); //10
+// strCount('Helllog', 'g'); // 1
+// strCount('Haywire', 'y') //1
+// strCount('w', 'l'); //0
+// strCount('B', 'b'); //0
+// strCount('Bolivia', 'li'); //0
+// strCount('w', 'l'); //0
+// strCount('lhcebdzkbajghfhdhejefzhjkhifgagzi', 'd'); //2
+// strCount('lllcdc', 'k'); //0
+
+
+var myVar = 87;
+
+// Only change code below this line
+// myVar = myVar++;
+console.log(myVar = myVar++)
+
+// let x = 3;
+// const y = x++;
+
+let r = 3;
+r = ++r;
+console.log(`r:${r}`);
+// expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// expected output: "a:4, b:4"
+
+
+module.exports = strCount;
