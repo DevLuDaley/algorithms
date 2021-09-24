@@ -1,0 +1,1 @@
+// function strCount(str, letter){
