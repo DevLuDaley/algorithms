@@ -1,13 +1,14 @@
-const countDown = (fromNumber) => {
-  console.log(fromNumber);
+// function recursion() {
+// function countDown(fromNumber) {
+//   console.log(fromNumber);
 
-  const nextNumber = fromNumber - 1;
+//   const nextNumber = fromNumber - 1;
 
-  if (nextNumber > 0) {
-    return countDown(nextNumber);
-  }
-};
-countDown(5);
+//   if (nextNumber > 0) {
+//     countDown(nextNumber);
+//   }
+// }
+// countDown(5);
 
 // Iterative Factorial Example
 const factorialI = (number) => {
@@ -19,7 +20,7 @@ const factorialI = (number) => {
   console.log(result);
   return result;
 };
-// factorialI(5);
+factorialI(5);
 
 function factorialR(number) {
   if (number === 1) {
@@ -29,12 +30,12 @@ function factorialR(number) {
   return number * factorialR(number - 1);
 }
 
-factorialR(5);
+// factorialR(5);
 // }
 // module.exports = recursion;
 
 // exports.factorialI = function() {};
 // exports.factorialR = function() {};
-module.exports = countDown;
-module.exports = factorialI;
-module.exports = factorialR;
+module.exports = factorialI.factorialR;
+// module.exports = factorialR;
+// module.exports.countdown;

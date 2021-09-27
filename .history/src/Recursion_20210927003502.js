@@ -29,12 +29,12 @@ function factorialR(number) {
   return number * factorialR(number - 1);
 }
 
-factorialR(5);
+// factorialR(5);
 // }
 // module.exports = recursion;
 
 // exports.factorialI = function() {};
 // exports.factorialR = function() {};
-module.exports = countDown;
 module.exports = factorialI;
 module.exports = factorialR;
+module.exports = countDown;

@@ -29,7 +29,7 @@ function factorialR(number) {
   return number * factorialR(number - 1);
 }
 
-factorialR(5);
+// factorialR(5);
 // }
 // module.exports = recursion;
 
