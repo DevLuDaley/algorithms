@@ -37,10 +37,7 @@ function twoHighest(arr) {
     // var nope = sorted.pop();
     console.log(box[0]);
     console.log(sorted[sorted.length - 1]);
-    console.log(sorted);
     sorted.pop();
-    console.log(sorted);
-    console.log(sorted[sorted.length - 1]);
     // box.push(last)
     // }
   } else {

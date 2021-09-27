@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 function twoHighest(arr) {
   // !order array in asc order
   const sorted = arr.sort((a, b) => a - b);
@@ -19,6 +18,7 @@ function twoHighest(arr) {
 
   //! check if first element in box[] has the same value as the last element in arr[]
 
+  //! pop off last 2 elements in the array
   const box = [];
   const last = sorted.pop();
   box.push(last);
@@ -30,28 +30,16 @@ function twoHighest(arr) {
 
   // dupeChecker(last)
   // var dupeChecker = (lastNum) =>{
-  // for (let i = 0; i <= sorted.length; i -= 1) {
-  // for (const num of sorted) {
-  if (box[0] == sorted[sorted.length - 1]) {
-    // if (box[0] === num) {
+  if (box[0] === sorted[sorted.length - 1]) {
     // var nope = sorted.pop();
-    console.log(box[0]);
-    console.log(sorted[sorted.length - 1]);
-    console.log(sorted);
-    sorted.pop();
-    console.log(sorted);
-    console.log(sorted[sorted.length - 1]);
     // box.push(last)
     // }
-  } else {
-    box.push(sorted[sorted.length - 1]);
   }
-  // }
 
   // var fillTheBox = () => {
 
-  // const lastOne = sorted.pop();
-  // box.push(lastOne);
+  const lastOne = sorted.pop();
+  box.push(lastOne);
   // }
 
   // !push to a new array
@@ -61,6 +49,6 @@ function twoHighest(arr) {
   return box;
 }
 
-twoHighest([10, 4, 10, 10, 9]);
+twoHighest([4, 10, 10, 9]);
 
 module.exports = twoHighest;

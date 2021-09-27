@@ -32,11 +32,12 @@ function twoHighest(arr) {
   // var dupeChecker = (lastNum) =>{
   // for (let i = 0; i <= sorted.length; i -= 1) {
   // for (const num of sorted) {
-  if (box[0] == sorted[sorted.length - 1]) {
+  while (box[0] == sorted[sorted.length - 1]) {
     // if (box[0] === num) {
     // var nope = sorted.pop();
     console.log(box[0]);
     console.log(sorted[sorted.length - 1]);
+    
     console.log(sorted);
     sorted.pop();
     console.log(sorted);
