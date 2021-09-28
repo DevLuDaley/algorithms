@@ -1,0 +1,12 @@
+{
+"plugins": ["jsdom-quokka-plugin"],
+  "babel":
+  { "presets": ["react-app"]
+  },
+    "autoDetect": true,
+    "ts": {
+        "compilerOptions": {
+            target: "es6",
+            ...
+        }
+}

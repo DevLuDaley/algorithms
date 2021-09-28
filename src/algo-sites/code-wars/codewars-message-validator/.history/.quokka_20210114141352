@@ -1,0 +1,10 @@
+{
+"plugins": ["jsdom-quokka-plugin", "quokka-jquery-loader"],
+  "babel": 
+  { "presets": ["react-app"],
+    "ts": true
+  },
+  
+   
+    "autoDetect": true
+}

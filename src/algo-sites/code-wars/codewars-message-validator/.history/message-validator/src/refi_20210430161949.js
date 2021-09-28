@@ -1,0 +1,1 @@
+//lower apr or lower min refi is 200 and 6 months

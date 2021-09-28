@@ -1,0 +1,7 @@
+{
+  "plugins": ["jsdom-quokka-plugin"],
+  "babel": {
+    "tj": true,
+    "presets": ["react-app"]
+  }
+}
