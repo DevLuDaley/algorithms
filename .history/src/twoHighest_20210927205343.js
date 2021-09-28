@@ -12,13 +12,12 @@ function twoHighest(arr) {
   const box = [];
   const last = sorted.pop();
   box.push(last);
-  // console.log(last);
 
-  const sortedChecker = (sortedArr) => {
-    if (box[0] === sortedArr[sortedArr.length - 1]) {
-      sortedArr.pop();
-      sortedChecker(sortedArr);
-    } else { box.push(sortedArr[sortedArr.length - 1]); }
+  const sortedChecker = (arr) => {
+    if (box[0] === arr[arr.length - 1]) {
+      arr.pop();
+      sortedChecker(arr);
+    } else { box.push(arr[arr.length - 1]); }
   };
   sortedChecker(sorted);
 
@@ -28,6 +27,6 @@ function twoHighest(arr) {
   return box;
 }
 
-twoHighest([10, 4, 10, 10, 9, 10]);
+// twoHighest([10, 4, 10, 10, 9, 10]);
 
 module.exports = twoHighest;

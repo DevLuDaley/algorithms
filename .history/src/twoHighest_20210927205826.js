@@ -12,13 +12,13 @@ function twoHighest(arr) {
   const box = [];
   const last = sorted.pop();
   box.push(last);
-  // console.log(last);
+  console.log(last);
 
-  const sortedChecker = (sortedArr) => {
-    if (box[0] === sortedArr[sortedArr.length - 1]) {
-      sortedArr.pop();
-      sortedChecker(sortedArr);
-    } else { box.push(sortedArr[sortedArr.length - 1]); }
+  const sortedChecker = (arr) => {
+    if (box[0] === arr[arr.length - 1]) {
+      arr.pop();
+      sortedChecker(arr);
+    } else { box.push(arr[arr.length - 1]); }
   };
   sortedChecker(sorted);
 

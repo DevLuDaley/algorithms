@@ -12,7 +12,7 @@ function twoHighest(arr) {
   const box = [];
   const last = sorted.pop();
   box.push(last);
-  // console.log(last);
+  console.log(last);
 
   const sortedChecker = (sortedArr) => {
     if (box[0] === sortedArr[sortedArr.length - 1]) {
