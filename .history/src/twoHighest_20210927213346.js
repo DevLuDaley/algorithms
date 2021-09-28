@@ -1,17 +1,18 @@
 /* eslint-disable no-console */
 function twoHighest(arr) {
-  // order array in asc order
+  // !order array in asc order
+  // !order array in asc order
   const sorted = arr.sort((a, b) => a - b);
 
   // create a container/box to return the highest 2 numbers
   const box = [];
 
-  // pop off last element in arr[]
+  //! pop off last element in arr[]
   const last = sorted.pop();
 
-  // check if first element in box[] has the same value as the last element in arr[]
+  //! check if first element in box[] has the same value as the last element in arr[]
 
-  // confirm that the last two elements in arr[] are not the same value
+  // ! confirm that the last two elements in arr[] are not the same value
 
   // remove the last element in arr[] and push it into box
   box.push(last);
@@ -24,14 +25,14 @@ function twoHighest(arr) {
       // start over sortedChecking the sortedArr
       sortedChecker(sortedArr);
     } else {
-      // push the last element in arr[] into box
+      // push the leas element in arr[] into box
       box.push(sortedArr[sortedArr.length - 1]);
     }
   };
   sortedChecker(sorted);
 
+  // ! return the 2 highest values
   console.log(box);
-  // return the 2 highest values
   return box;
 }
 

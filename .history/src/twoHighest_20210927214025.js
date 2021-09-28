@@ -35,6 +35,6 @@ function twoHighest(arr) {
   return box;
 }
 
-twoHighest([10, 4, 10, 10, 9, 10]);
+twoHighest([10, 4, 10, 20, 10, 9, 10]);
 
 module.exports = twoHighest;

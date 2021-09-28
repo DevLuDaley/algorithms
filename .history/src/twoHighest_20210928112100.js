@@ -8,6 +8,7 @@ function twoHighest(arr) {
 
   // pop off last element in arr[]
   const last = sorted.pop();
+  const last = sorted.pop();
 
   // check if first element in box[] has the same value as the last element in arr[]
 

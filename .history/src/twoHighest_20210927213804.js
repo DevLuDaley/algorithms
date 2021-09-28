@@ -30,7 +30,7 @@ function twoHighest(arr) {
   };
   sortedChecker(sorted);
 
-  console.log(box);
+  // console.log(box);
   // return the 2 highest values
   return box;
 }

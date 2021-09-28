@@ -24,14 +24,14 @@ function twoHighest(arr) {
       // start over sortedChecking the sortedArr
       sortedChecker(sortedArr);
     } else {
-      // push the last element in arr[] into box
+      // push the leas element in arr[] into box
       box.push(sortedArr[sortedArr.length - 1]);
     }
   };
   sortedChecker(sorted);
 
-  console.log(box);
   // return the 2 highest values
+  console.log(box);
   return box;
 }
 
