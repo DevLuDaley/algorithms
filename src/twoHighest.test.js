@@ -7,9 +7,13 @@ test('first', () => {
 });
 
 test('two', () => {
-  expect(twoHighest([4, 10, 10, 9, 10])).toEqual([10, 9]);
+  expect(twoHighest([10, 4, 10, 10, 9, 10, 10, 10])).toEqual([10, 9]);
 });
 
-test('Returns 15', () => {
+test('Returns 17', () => {
   expect(twoHighest([15, 20, 20, 17])).toEqual([20, 17]);
+});
+
+test('Returns 32 20', () => {
+  expect(twoHighest([15, 32, 20, 20, 17])).toEqual([32, 20]);
 });
