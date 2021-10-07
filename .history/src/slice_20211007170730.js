@@ -6,10 +6,8 @@ const slicer = (arr=[5,20,10,8]) => {
     box.slice(2-3)
     
     let crate = [3,12,5,9,7,12,16]
-    let newCrate = crate.slice(2)
-    crate.length
-          newCrate.length
-    let newerCrate = newCrate.slice()
+    crate.slice(2)
+    crate.slice(2).length
 }
 slicer()
 // slicer(arr)
