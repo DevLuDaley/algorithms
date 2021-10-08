@@ -1,15 +1,19 @@
+
 function rangeOfNumbers(startNum, endNum) {
-// return [];
-  if (startNum === endNum) {
-    return [startNum];
-  }
-  const numbers = rangeOfNumbers(startNum, endNum - 1);
-  console.log(`Numbers variable before each endNum push NUMBERS = ${numbers}`);
-  numbers.push(endNum);
-  console.log(`Numbers after push ${numbers}`);
-  return numbers;
+//return [];
+if (startNum === endNum) {
+ return [startNum]
+} else {
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    console.log("Numbers variable before each endNum push NUMBERS = "+ numbers);
+    numbers.push(endNum);
+    console.log("Numbers after push " + numbers);
+    return numbers;
 }
-rangeOfNumbers(1, 3);
+};
+rangeOfNumbers(1,3)
+
+
 
 // function countDown(fromNumber) {
 //     console.log(fromNumber);
@@ -21,6 +25,8 @@ rangeOfNumbers(1, 3);
 //     }
 // }
 // countDown(5);
+
+
 
 // const plunker = (num) => {
 //     if (num > 5){
