@@ -1,0 +1,10 @@
+const mySet = new Set();
+console.log(mySet);
+mySet.add(5);
+mySet.add(5);
+console.log(mySet.add(10));
+console.log(mySet.add(115));
+console.log(mySet.add(10));
+console.log(mySet.add(4));
+console.log(mySet.add(5));
+console.log(mySet);
