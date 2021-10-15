@@ -1,4 +1,5 @@
 const solution = (n) => {
+    n
     if (n == 1  || n == 0) {
         return 1;
     }
@@ -15,7 +16,3 @@ const solution = (n) => {
 // solution(5)
 // solution(7)
 
-const addNums = (n1, n2) => {
-    return n1 + n2
-}
-addNums(5,6)

@@ -15,7 +15,4 @@ const solution = (n) => {
 // solution(5)
 // solution(7)
 
-const addNums = (n1, n2) => {
-    return n1 + n2
-}
-addNums(5,6)
+
