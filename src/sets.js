@@ -1,3 +1,5 @@
+const readline = require('readline');
+
 const mySet = new Set();
 // console.log(mySet);
 // mySet.add(5);
@@ -68,4 +70,20 @@ if (require.main === module) {
   console.log('=>', findFirstDupe([3, 1, 3, 4, 2]));
 }
 
+function processData(input) {
+  const rl = readline.input;
+  // Enter your code here
+  // Enter your code here\
+  const sam = 0;
+  // return sam = 99912222;
+  return input;
+}
+const input = `3 
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry`;
+processData(input);
 module.exports = findFirstDupe;
